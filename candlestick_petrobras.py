@@ -18,7 +18,7 @@ dados = dados.rename_axis('data')
 
 #desenvolvimento do primeiro gráfico
 dados['fechamento'].plot(figsize=(10,6))
-plt.title('Variação do Preço por Data', fontsize=16)
+plt.title('Variação do Preço por Data - Petrobrás', fontsize=16)
 plt.legend(['Fechamento'])
 #plt.show()
 
@@ -99,7 +99,7 @@ Aqui, teremos dois subplots: um para o gráfico de candlestick e outro para o vo
 '''
 fig = make_subplots(rows=2, cols=1, shared_xaxes=True,
                     vertical_spacing=0.1,
-                    subplot_titles=('Candlesticks', 'Volume Transacionado'),
+                    subplot_titles=('Candlesticks - Petrobras', 'Volume Transacionado - Petrobras'),
                     row_width=[0.2,0.7])
 '''
 "No gráfico de candlestick, cada candle representa um dia de negociação,
